@@ -1,6 +1,68 @@
+/* MAIN STYLES */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+/* MAIN */
+
+main {
+  background-color: #eeeeee;
+}
+
+/* MAIN PART */
+
+.main-part {
+  width: 100%;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+.main-part-nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.main-part-nav-list-item a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #7f7f7f;
+}
+
+.main-part hr {
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  margin-bottom: 40px;
+}
+
+.main-part-ads {
+  width: 1200px;
+  height: 128px;
+  border-radius: 8px;
+}
+
+/* POSTS */
+
+
