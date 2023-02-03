@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+*:focus {
+  outline: 3px dotted #7296ec;
+  outline-offset: 4px;
+}
+
 /* CONTAINER */
 
 .container {
@@ -94,7 +99,7 @@ header {
   background-color: #ffffff;
   border-radius: 60px;
   border: 1px solid #ffffff;
-  padding: 12px 15px;
+  padding: 15px 20px 13px 40px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -109,20 +114,18 @@ header {
   border-radius: 39px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+  justify-content: center;
+  padding: 3px;
   margin-right: 25px;
 }
 
 .lang-toggle-link {
   width: 30px;
   height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 400;
   font-size: 13px;
-  line-height: 15px;
+  line-height: 30px;
+  text-align: center;
   color: #a6a6a6;
 }
 
@@ -142,6 +145,7 @@ header {
   line-height: 19px;
   color: #ffffff;
   padding: 13px 20px;
+  cursor: pointer;
   transition: opacity 0.4 ease;
 }
 
