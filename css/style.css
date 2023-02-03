@@ -57,6 +57,15 @@ header {
   color: #7296ee;
   padding: 8px 6px;
   margin-right: 35px;
+  transition: opacity 0.4 ease;
+}
+
+.header-logo:hover {
+  opacity: 0.8;
+}
+
+.header-logo:active {
+  opacity: 0.6;
 }
 
 .exchange-rate {
@@ -127,19 +136,21 @@ header {
   width: 89px;
   height: 45px;
   background-color: #7296ec;
-  border: 1px solid #7296ec;
   border-radius: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
   padding: 13px 20px;
-  transition: background-color 0.4s ease, color 0.4s ease;
+  transition: opacity 0.4 ease;
 }
 
 .header-top-right > a:hover {
-  background-color: #ffffff;
-  color: #7296ec;
+  opacity: 0.8;
+}
+
+.header-top-right > a:active {
+  opacity: 0.6;
 }
 
 .header-bottom {
