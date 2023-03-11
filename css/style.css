@@ -17,6 +17,14 @@ a {
   text-decoration: none;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
 *:focus {
   outline: 3px dotted #7296ec;
   outline-offset: 4px;
@@ -232,6 +240,8 @@ main {
   border-radius: 15px;
   padding: 20px 17px 18px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-title {
@@ -258,7 +268,9 @@ main {
   width: 359px;
   height: 165px;
   border-radius: 10px;
+  margin-top: auto;
   margin-bottom: 15px;
+  display: block;
 }
 
 .post-container span {
@@ -274,4 +286,36 @@ main {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+
+/* NOTIFICATION-CTA */
+
+.notification-cta {
+  width: 1050px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 70px 25px 25px;
+  margin: 0 auto 60px;
+  background-image: url("/img/notification-bg.png");
+}
+
+.notification-cta-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.notification-cta-button {
+  width: 149px;
+  height: 50px;
+  background-color: #f78b3b;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
 }
