@@ -534,6 +534,10 @@ main {
   padding: 40px 0;
 }
 
+.site-footer *:focus {
+  outline: 3px dotted #ffffff;
+}
+
 .footer-wrapper {
   width: 100%;
   max-width: 998px;
@@ -555,6 +559,7 @@ main {
   font-size: 24px;
   line-height: 28px;
   color: #ffffff;
+  display: inline-block;
   transition: opacity 0.3s ease;
 }
 
@@ -604,6 +609,8 @@ main {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+  display: inline-block;
+  padding-right: 20px;
 }
 
 .footer-top-item-link:hover {
@@ -626,6 +633,7 @@ main {
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
+  width: 160px;
 }
 
 .footer-bottom-list {
@@ -641,5 +649,6 @@ main {
 .footer-bottom-icon {
   width: 25px;
   height: 25px;
-  object-fit: cover;
+  object-fit: contain;
+  flex-shrink: 0;
 }
