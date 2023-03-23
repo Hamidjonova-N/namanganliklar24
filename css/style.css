@@ -525,6 +525,10 @@ main {
   border-radius: 15px;
 }
 
+.sidebar-ad-img-tall {
+  height: 553px !important;
+}
+
 /* FOOTER */
 
 .site-footer {
@@ -617,7 +621,7 @@ main {
   text-decoration: underline;
 }
 
-.site-footer-hr {
+.footer-hr {
   width: 100%;
   border: 1px solid #cecece;
   margin-bottom: 20px;
