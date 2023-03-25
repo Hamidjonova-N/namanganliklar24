@@ -529,6 +529,143 @@ main {
   height: 553px !important;
 }
 
+/* CONTACT */
+
+.contact-container {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-heading {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* FORM-CONTAINER */
+
+.form-container {
+  width: 696px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+
+.form-container input,
+#message-input {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.form-container *::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+#fullname-input {
+  margin-right: 6px;
+}
+
+#fullname-input,
+#phone-number-input {
+  width: 343px;
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+#email-input {
+  width: 696px;
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+#message-input {
+  width: 696px;
+  min-height: 180px;
+  height: 180px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  width: 145px;
+  height: 53px;
+  background-color: #7297ef;
+  border: none;
+  border-radius: 10px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  cursor: pointer;
+  float: right;
+  transition: opacity 0.3 ease;
+}
+
+.submit-button:hover {
+  opacity: 0.8;
+}
+
+.submit-button:active {
+  opacity: 0.6;
+}
+
+/* BUSINESS-CARD-CONTAINER */
+
+.business-card-container {
+  width: 494px;
+  height: 310px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  font-family: "Rubik", sans-serif;
+  color: #000000;
+  padding: 40px 25px;
+}
+
+.business-card-list {
+  list-style-type: none;
+}
+
+.business-card-item {
+  width: 100%;
+}
+
+.business-card-item:not(:last-child) {
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 20px;
+}
+
+.business-card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 7px;
+}
+
+.business-card-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
 /* FOOTER */
 
 .site-footer {
