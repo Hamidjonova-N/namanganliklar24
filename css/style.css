@@ -122,6 +122,10 @@ header {
   line-height: 17px;
   color: #8d8d8d;
   margin-right: 25px;
+  background-image: url("/icon/icon-search.svg");
+  background-repeat: no-repeat;
+  background-size: 19.5px;
+  background-position: 15px center;
 }
 
 .lang-toggle {
@@ -311,7 +315,10 @@ main {
   justify-content: space-between;
   padding: 25px 70px 25px 25px;
   margin: 0 auto 60px;
-  background-image: url("/img/notification-bg.png");
+  background-image: url("/img/notificatio-cta-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .notification-cta-text {
@@ -645,6 +652,7 @@ main {
 
 .business-card-item {
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .business-card-item:not(:last-child) {
@@ -663,7 +671,7 @@ main {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  margin-bottom: 20px;
+  color: #7296ec;
 }
 
 /* FOOTER */
@@ -792,4 +800,17 @@ main {
   height: 25px;
   object-fit: contain;
   flex-shrink: 0;
+}
+
+/* RETINA-BACKGROUND */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .notification-cta {
+    background-image: url("/img/notificatio-cta-bg@2x.jpg");
+  }
 }
