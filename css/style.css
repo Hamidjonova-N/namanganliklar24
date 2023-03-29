@@ -1,10 +1,17 @@
+:root {
+  --primary-color: #7296ec;
+  --second-color: #ffffff;
+  --third-color: #000000;
+  --text-font-family: "Rubik", sans-serif;
+}
+
 /* MAIN STYLES */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--text-font-family);
   font-style: normal;
 }
 
@@ -14,7 +21,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--second-color);
 }
 
 a {
@@ -30,7 +37,7 @@ button:active {
 }
 
 *:focus {
-  outline: 3px dotted #7296ec;
+  outline: 3px dotted var(--primary-color);
   outline-offset: 4px;
 }
 
@@ -71,12 +78,12 @@ header {
 .header-logo {
   width: 276px;
   height: 45px;
-  background-color: #ffffff;
+  background-color: var(--second-color);
   border-radius: 7px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #7296ee;
+  color: var(--primary-color);
   padding: 8px 6px;
   margin-right: 35px;
   transition: opacity 0.4 ease;
@@ -102,7 +109,7 @@ header {
 }
 
 .exchange-rate-item b {
-  color: #2959ce;
+  color: var(--primary-color);
   margin-right: 4px;
 }
 
@@ -113,9 +120,9 @@ header {
 .header-search {
   width: 275px;
   height: 45px;
-  background-color: #ffffff;
+  background-color: var(--second-color);
   border-radius: 60px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--second-color);
   padding: 15px 20px 13px 40px;
   font-weight: 400;
   font-size: 14px;
@@ -151,20 +158,20 @@ header {
 }
 
 .lang-toggle-link-active {
-  background-color: #ffffff;
+  background-color: var(--second-color);
   border-radius: 50%;
-  color: #000000 !important;
+  color: var(--third-color) !important;
 }
 
 .header-top-right > a {
   width: 89px;
   height: 45px;
-  background-color: #7296ec;
+  background-color: var(--primary-color);
   border-radius: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: var(--second-color);
   padding: 13px 20px;
   cursor: pointer;
   transition: opacity 0.4 ease;
@@ -212,7 +219,7 @@ header {
 }
 
 .header-bottom-nav-list-item a:hover {
-  color: #7296ec;
+  color: var(--primary-color);
 }
 
 .header-bottom-nav-list-item a:active {
@@ -228,7 +235,7 @@ header {
 /* MAIN */
 
 main {
-  background-color: #ffffff;
+  background-color: var(--second-color);
   margin-bottom: 100px;
 }
 
@@ -257,16 +264,16 @@ main {
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
-  color: #000000;
+  color: var(--third-color);
   margin-bottom: 10px;
 }
 
 .post-title-link {
-  color: #000000;
+  color: var(--third-color);
 }
 
 .post-title-link:hover {
-  color: #7296ec;
+  color: var(--primary-color);
 }
 
 .post-title-link:active {
@@ -325,7 +332,7 @@ main {
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
-  color: #000000;
+  color: var(--third-color);
 }
 
 .notification-cta-button {
@@ -337,7 +344,7 @@ main {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+  color: var(--second-color);
 }
 
 /* lAYOUT-2-1 */
@@ -353,7 +360,7 @@ main {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
+  color: var(--third-color);
   margin-bottom: 20px;
 }
 
@@ -388,14 +395,14 @@ main {
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
-  color: #000000;
+  color: var(--third-color);
   margin-bottom: 10px;
   flex-grow: 1;
   transition: color 0.3s ease;
 }
 
 .global-news-title:hover {
-  color: #7296ec;
+  color: var(--primary-color);
 }
 
 .global-news-title:active {
@@ -439,7 +446,7 @@ main {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #000000;
+  color: var(--third-color);
 }
 
 /* SIDEBAR */
@@ -464,7 +471,7 @@ main {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
+  color: var(--third-color);
   margin-bottom: 20px;
 }
 
@@ -502,13 +509,13 @@ main {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  color: var(--third-color);
   margin-bottom: 8px;
   transition: color 0.3s ease;
 }
 
 .global-news-sidebar-title-link:hover {
-  color: #7296ec;
+  color: var(--primary-color);
 }
 
 .global-news-sidebar-title-link:active {
@@ -540,17 +547,17 @@ main {
 
 .contact-container {
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--second-color);
   display: flex;
   justify-content: space-between;
 }
 
 .contact-heading {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--text-font-family);
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
+  color: var(--third-color);
   margin-bottom: 20px;
 }
 
@@ -565,23 +572,23 @@ main {
 
 .form-container input,
 #message-input {
-  background-color: #ffffff;
+  background-color: var(--second-color);
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 18px 20px;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--text-font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #000000;
+  color: var(--third-color);
 }
 
 .form-container *::placeholder {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--text-font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #000000;
+  color: var(--third-color);
   opacity: 0.5;
 }
 
@@ -613,14 +620,14 @@ main {
 .submit-button {
   width: 145px;
   height: 53px;
-  background-color: #7297ef;
+  background-color: var(--primary-color);
   border: none;
   border-radius: 10px;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--text-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: var(--second-color);
   cursor: pointer;
   float: right;
   transition: opacity 0.3 ease;
@@ -641,8 +648,8 @@ main {
   height: 310px;
   background-color: #f6f6f6;
   border-radius: 10px;
-  font-family: "Rubik", sans-serif;
-  color: #000000;
+  font-family: var(--text-font-family);
+  color: var(--third-color);
   padding: 40px 25px;
 }
 
@@ -671,7 +678,7 @@ main {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #7296ec;
+  color: var(--primary-color);
 }
 
 /* FOOTER */
@@ -679,12 +686,12 @@ main {
 .site-footer {
   width: 100%;
   height: 356px;
-  background-color: #7297ef;
+  background-color: var(--primary-color);
   padding: 40px 0;
 }
 
 .site-footer *:focus {
-  outline: 3px dotted #ffffff;
+  outline: 3px dotted var(--second-color);
 }
 
 .footer-wrapper {
@@ -707,7 +714,7 @@ main {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #ffffff;
+  color: var(--second-color);
   display: inline-block;
   transition: opacity 0.3s ease;
 }
@@ -733,11 +740,11 @@ main {
 }
 
 .footer-top-text {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--text-font-family);
   font-weight: 400;
   font-size: 12px;
   line-height: 19px;
-  color: #ffffff;
+  color: var(--second-color);
 }
 
 .footer-top-list {
@@ -753,11 +760,11 @@ main {
 }
 
 .footer-top-item-link {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--text-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: var(--second-color);
   display: inline-block;
   padding-right: 20px;
 }
@@ -781,7 +788,7 @@ main {
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
-  color: #ffffff;
+  color: var(--second-color);
   width: 160px;
 }
 
